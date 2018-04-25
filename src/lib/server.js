@@ -2,7 +2,7 @@
 
 const http = require('http');
 const cowsay = require('cowsay');
-const logger = require('./logger');
+// const logger = require('./logger');
 const bodyParser = require('./body-parser');
 const faker = require('faker');
 
