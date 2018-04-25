@@ -56,20 +56,7 @@ const app = http.createServer((req, res) => {
         }
 
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(`
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>cowsay</title>
-          </head>
-          <body>
-            <h1>cowsay</h1>
-            <pre>
-              ${text}
-            </pre>
-          </body>
-        </html>
-        `);
+        res.write(`<!DOCTYPE html><html><head><title>cowsay</title></head><body><h1>cowsay</h1><pre>${text}</pre></body></html>`);
         res.end();
         return undefined;
       }
