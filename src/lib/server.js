@@ -41,9 +41,6 @@ const app = http.createServer((req, res) => {
         return undefined;
       }
 
-      console.log(parsedRequest.method);
-      console.log(parsedRequest.url.pathname);
-
       if (parsedRequest.method === 'GET' && parsedRequest.url.pathname === '/cowsay') {
         // logger.log(logger.INFO, `querystring: ${parsedRequest.url.query}`);
         const random = faker.random.words();
